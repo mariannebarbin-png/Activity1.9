@@ -11,16 +11,7 @@ const scene = new THREE.Scene()
  */
 const textureLoader = new THREE.TextureLoader()
 const colorTexture = textureLoader.load(
-  './textures/door/minecraft.png',
-  () => console.log('Texture loaded successfully'),
-  undefined,
-  (error) => {
-    console.error('Texture failed to load:', error)
-    // Fallback to colored material
-    material.color.set(0xff0000)
-    material.map = null
-  }
-)
+  './textures/door/color.jpg')
 // Configure texture properties
 colorTexture.repeat.x = 2
 colorTexture.repeat.y = 3
