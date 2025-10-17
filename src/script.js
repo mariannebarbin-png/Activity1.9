@@ -10,8 +10,9 @@ const scene = new THREE.Scene()
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const colorTexture = textureLoader.load('./textures/door/color.jpg')
-
+const colorTexture = textureLoader.load(
+  './textures/door/color.jpg'
+)
 // Configure texture properties
 colorTexture.repeat.x = 2
 colorTexture.repeat.y = 3
